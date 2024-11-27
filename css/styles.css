@@ -604,8 +604,7 @@ progress {
   height: auto;
   object-fit: cover; /* Ensures the image fills the circle without stretching */
   aspect-ratio: 1; /* Forces a 1:1 aspect ratio, making the image square */
-  height: 500px;
-
+  
 }
 
 .img-thumbnail {
