@@ -669,6 +669,67 @@ progress {
     max-width: 1320px;
   }
 }
+/* General styling for larger screens */
+.content-sections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Adds space between the image and text */
+  margin: 20px;
+}
+
+.content-image {
+  max-width: 40%; /* Adjust image size */
+  height: auto;
+}
+
+.content-text {
+  max-width: 50%;
+}
+
+/* Responsive design for smaller screens (phones) */
+@media (max-width: 768px) {
+  .content-sections {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align all elements */
+    text-align: center; /* Center-align text */
+  }
+
+  .content-heading {
+    text-align: center; /* Center-align the heading */
+  }
+
+  .content-image {
+    max-width: 80%; /* Adjust the image size */
+    margin: 10px 0; /* Add spacing around the image */
+  }
+
+  .content-text {
+    max-width: 90%; /* Adjust text width */
+  }
+}
+
+
+@media (max-width: 780px)
+{
+  .box
+  {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the image and text */
+    text-align: center; /* Center-align text */
+    max-width: 90%; /* Adjust text width */
+  }
+  .box img
+  {
+    max-width: 80%; /* Make the image smaller on smaller screens */
+  }
+
+}
+.box img
+{
+  height: 690px;
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
