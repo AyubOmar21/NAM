@@ -678,37 +678,47 @@ progress {
   margin: 20px;
 }
 
+.content-heading {
+  text-align: left; /* Keep heading aligned to the left */
+  margin-bottom: 10px; /* Add spacing below the heading */
+}
+
 .content-image {
-  max-width: 40%; /* Adjust image size */
+  max-width: 40%; /* Adjust image size for larger screens */
   height: auto;
+  margin-bottom: 20px; /* Add spacing below the image */
 }
 
 .content-text {
   max-width: 50%;
+  text-align: left; /* Keep text aligned to the left */
 }
 
 /* Responsive design for smaller screens (phones) */
 @media (max-width: 768px) {
   .content-sections {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; /* Stack all elements vertically */
     align-items: center; /* Center-align all elements */
     text-align: center; /* Center-align text */
   }
 
   .content-heading {
     text-align: center; /* Center-align the heading */
+    margin-bottom: 15px; /* Adjust spacing below the heading */
   }
 
   .content-image {
-    max-width: 80%; /* Adjust the image size */
-    margin: 10px 0; /* Add spacing around the image */
+    max-width: 80%; /* Adjust image size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 15px 0; /* Add spacing around the image */
   }
 
   .content-text {
-    max-width: 90%; /* Adjust text width */
+    max-width: 90%; /* Adjust text width for smaller screens */
   }
 }
+
 
 
 @media (max-width: 780px)
